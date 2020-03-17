@@ -1,0 +1,60 @@
+.\" Manpage for tagger
+.\" Contact dzerus@keemail.me to correct errors or typos
+.TH man 1 "June 16 2018" "0.1" "tagger man page"
+.SH NAME
+tagger \- Yet another command line web scraper
+.SH SYNONPSIS
+
+tagger --help
+
+tagger --version
+
+tagger.py [-h] [-v] [-t TAGNAME [TAGNAME ...]] [-i ID [ID ...]]
+                 [-s SATTR [SATTR ...]] [-a ATTR [ATTR ...]] [-f FNAME]
+                 [-o OFILE]
+
+.SH DESCRIPTION
+Tagger is a small command-line web scraper that uses Python's bs4 library to scrape web pages. It contains simple features, like printing out matching tags or classes. Please, be careful as excessive use may be harmful.
+
+.SH OPTIONS
+-h, --help
+
+This option displays a small help message, illustrating basic usage of the common options.
+
+-v, --version
+
+Displays the current program version and exits
+
+-t, --tag TAGNAME
+
+This option allows you to narrow your search by specific HTML tag name. For example, you can search only for <p>, or <a> tags.
+
+-i, --id ID
+
+This option allows you to narrow your search to a tag with the given ID. This option will only look by id, all other passed parameters will be ignored.
+
+-a, --attr ATTR
+
+This option makes the query return only the given attribute. For example, return only hrefs from <a> tags, or sources from <img> tags. You can also specify "inner" to return the inner text from the tags.
+
+-f, --file FNAME
+
+This option allows you to use an HTML file instead of going online and getting the entire website. Advisable for repeated queries, as it prevents you from triggering captchas.
+
+-o, --output OUTPUT
+
+Outputs the HTML of the website to a file with specified name. Should either be used with -e, or -f.
+
+-s, --search-attr ATTR ATTR_CONTENT
+
+Searches for tags where ATTR is set to ATTR_CONTENT, (i.e. class test) and prints them. Works both with all options.
+
+.SH SEE ALSO
+python(1), curl(1)
+
+.SH KNOWN BUGS
+No known bugs yet, but program is still in development so these should appear soon enough.
+
+.SH AUTHOR
+Dellon Z. (dzerus@keemail.me)
+A.K.A. A. Sushko
