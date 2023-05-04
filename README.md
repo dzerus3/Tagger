@@ -1,8 +1,9 @@
 # Tagger - An extremely simple CLI frontend to BeautifulSoup
+# If you're interested in using this for some reason, you're probably better off using [htmlq](https://github.com/mgdm/htmlq).
 # Author: Dellon Zerus
 # All code licensed under GPLv3
 
-Tagger is a small command line utility written in Python, using bs4 to scrape web pages. 
+Tagger is a small command line utility written in Python, using bs4 to scrape web pages. I wrote it as a practice tool way back when, but it's not very useful.
 
 Note: Originally intended, and tested only for Linux.
 
